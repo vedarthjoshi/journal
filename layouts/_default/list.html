@@ -1,0 +1,28 @@
+{{ define "main" }}
+<a href="javascript:history.back()">
+    <h1 class="back">&lt;</h1>
+</a>
+<div class="listDiv">
+        <h1 >{{ .Title }}</h1>
+        {{ range .Pages }}
+        <article class="list">
+            <ul>
+                <li>
+                    <div class="listArticle">
+                            <p class="listDate">
+                                <!-- {{ .Date.Format "January 2 2006" }}     -->
+                                {{ .Date.Format "2006-01-02" }}
+                            </p>
+                            &nbsp;
+                            <a href="{{ .RelPermalink }}">
+                            <p class="title">
+                                {{ .Title }}
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        {{ end }}
+    </div>
+{{ end }}

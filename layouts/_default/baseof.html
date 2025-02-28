@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- <title>{{ .Title }} | {{ .Site.Title }}</title> -->
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="upper">
+        <!-- <center>
+            <h1 class="mainTitle">{{ .Site.Title }}</h1>
+        </center> -->
+        {{ partial "header" . }}
+        <main>
+            {{ block "main" . }}{{ end }}
+        </main>
+    </div>
+    {{ partial "footer" . }}
+    
+</body>
+</html>
