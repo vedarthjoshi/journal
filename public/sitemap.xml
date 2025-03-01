@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/about/</loc>
     <lastmod>2025-02-28T01:43:35+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/</loc>
     <lastmod>2025-02-28T01:43:35+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/devlog/crimsonsquare/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/devlog/crimsonsquare/</loc>
     <lastmod>2025-02-28T01:39:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/general/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/general/</loc>
     <lastmod>2025-02-28T01:38:55+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/devlog/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/devlog/</loc>
     <lastmod>2025-02-28T01:38:46+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/general/buildingstaticsiteswithhugo/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/</loc>
     <lastmod>2025-02-22T01:50:15+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://vedarthjoshi.github.io/journal/tags/</loc>
   </url>
 </urlset>

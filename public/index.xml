@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vedarth&#39;s Journal</title>
-    <link>http://localhost:1313/</link>
+    <link>https://vedarthjoshi.github.io/journal/</link>
     <description>Recent content on Vedarth&#39;s Journal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Feb 2025 01:43:35 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vedarthjoshi.github.io/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://vedarthjoshi.github.io/journal/about/</link>
       <pubDate>Fri, 28 Feb 2025 01:43:35 +0530</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://vedarthjoshi.github.io/journal/about/</guid>
       <description></description>
     </item>
     <item>
       <title>CrimsonSquare</title>
-      <link>http://localhost:1313/devlog/crimsonsquare/</link>
+      <link>https://vedarthjoshi.github.io/journal/devlog/crimsonsquare/</link>
       <pubDate>Fri, 28 Feb 2025 01:39:26 +0530</pubDate>
-      <guid>http://localhost:1313/devlog/crimsonsquare/</guid>
+      <guid>https://vedarthjoshi.github.io/journal/devlog/crimsonsquare/</guid>
       <description></description>
     </item>
     <item>
       <title>Building Static Sites With Hugo</title>
-      <link>http://localhost:1313/general/buildingstaticsiteswithhugo/</link>
+      <link>https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/</link>
       <pubDate>Sat, 22 Feb 2025 01:50:15 +0530</pubDate>
-      <guid>http://localhost:1313/general/buildingstaticsiteswithhugo/</guid>
+      <guid>https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/</guid>
       <description>&lt;p&gt;Building Static Sites With Hugo&lt;/p&gt;</description>
     </item>
   </channel>
