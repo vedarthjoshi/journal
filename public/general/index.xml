@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General on Vedarth&#39;s Journal</title>
-    <link>http://localhost:1313/journal/general/</link>
+    <link>https://vedarthjoshi.github.io/journal/general/</link>
     <description>Recent content in General on Vedarth&#39;s Journal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Feb 2025 01:50:15 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/journal/general/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vedarthjoshi.github.io/journal/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building Static Sites With Hugo</title>
-      <link>http://localhost:1313/journal/general/buildingstaticsiteswithhugo/</link>
+      <link>https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/</link>
       <pubDate>Sat, 22 Feb 2025 01:50:15 +0530</pubDate>
-      <guid>http://localhost:1313/journal/general/buildingstaticsiteswithhugo/</guid>
+      <guid>https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/</guid>
       <description>&lt;p&gt;Building Static Sites With Hugo&lt;/p&gt;</description>
     </item>
   </channel>
