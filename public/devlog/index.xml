@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devlogs on Vedarth&#39;s Journal</title>
-    <link>/devlog/</link>
+    <link>https://vedarthjoshi.github.io/devlog/</link>
     <description>Recent content in Devlogs on Vedarth&#39;s Journal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Feb 2025 01:39:26 +0530</lastBuildDate>
-    <atom:link href="/devlog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://vedarthjoshi.github.io/devlog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CrimsonSquare</title>
-      <link>/devlog/crimsonsquare/</link>
+      <link>https://vedarthjoshi.github.io/devlog/crimsonsquare/</link>
       <pubDate>Fri, 28 Feb 2025 01:39:26 +0530</pubDate>
-      <guid>/devlog/crimsonsquare/</guid>
+      <guid>https://vedarthjoshi.github.io/devlog/crimsonsquare/</guid>
       <description></description>
     </item>
   </channel>
