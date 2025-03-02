@@ -256,6 +256,10 @@ code{
         font-size: 0.5vw;
     }
 
+    .title{
+        font-weight: bold;
+    }
+
     .singleTitle{
         /* margin-top: 12rem; */
         /* border-bottom: 2px solid white; */
