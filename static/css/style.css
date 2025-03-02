@@ -308,5 +308,9 @@ code{
     .listArticle{
         font-size: 3vw;
     }
+    .inArticle a{
+        font-family: 'Nunito';
+    }
+
     
 }
