@@ -112,10 +112,21 @@ body {
 }
 
 .inArticle a{
-    text-decoration: none;
-    color: #c861a6;
-    background: #00000055;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    color: #cf5faa;
+    
+    /* background: #00000055; */
 }
+
+.inArticle p img {
+    width: 100%;  /* Make the image take full width of .inArticle */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra spacing below image */
+    max-width: 100%; /* Prevent it from exceeding its actual size */
+}
+
+
 
 .inArticle li{
     color: rgb(167, 192, 255);
@@ -153,7 +164,7 @@ p{
 }
 
 code{
-    background: red;
+    /* background: red; */
     font-family: source code pro, monospace;
 }
 
