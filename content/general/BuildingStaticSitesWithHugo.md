@@ -22,7 +22,7 @@ Hope that shows something like this instead of error
 hugo v0.143.1-0270364a347b2ece97e0321782b21904db515ecc+extendedwindows/amd64 BuildDate=2025-02-04T08:57:38Z VendorInfo=gohugoio  
 ```
 
-and I presume you have a git installed already just like a normal person but just in case
+and I presume you have a git installed already just like a normal insane person who doesn't wanna use blogger or medium but just in case
 <https://git-scm.com/downloads>  
 &nbsp;  
 so after that
