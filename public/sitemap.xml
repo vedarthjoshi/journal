@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/journal/about/</loc>
+    <loc>http://localhost:37025/journal/about/</loc>
     <lastmod>2025-02-28T01:43:35+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/</loc>
+    <loc>http://localhost:37025/journal/</loc>
     <lastmod>2025-02-28T01:43:35+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/devlog/crimsonsquare/</loc>
+    <loc>http://localhost:37025/journal/devlog/crimsonsquare/</loc>
     <lastmod>2025-02-28T01:39:26+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/general/</loc>
+    <loc>http://localhost:37025/journal/general/</loc>
     <lastmod>2025-02-28T01:38:55+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/devlog/</loc>
+    <loc>http://localhost:37025/journal/devlog/</loc>
     <lastmod>2025-02-28T01:38:46+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/general/buildingstaticsiteswithhugo/</loc>
+    <loc>http://localhost:37025/journal/general/buildingstaticsiteswithhugo/</loc>
     <lastmod>2025-02-22T01:50:15+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/devlog/whyibuiltthis/</loc>
+    <loc>http://localhost:37025/journal/devlog/whyibuiltthis/</loc>
     <lastmod>2025-02-22T01:50:15+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/journal/categories/</loc>
+    <loc>http://localhost:37025/journal/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/journal/tags/</loc>
+    <loc>http://localhost:37025/journal/tags/</loc>
   </url>
 </urlset>

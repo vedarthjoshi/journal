@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vedarth&#39;s Journal</title>
-    <link>http://localhost:1313/journal/</link>
+    <link>http://localhost:37025/journal/</link>
     <description>Recent content on Vedarth&#39;s Journal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Feb 2025 01:43:35 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/journal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37025/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/journal/about/</link>
+      <link>http://localhost:37025/journal/about/</link>
       <pubDate>Fri, 28 Feb 2025 01:43:35 +0530</pubDate>
-      <guid>http://localhost:1313/journal/about/</guid>
+      <guid>http://localhost:37025/journal/about/</guid>
       <description></description>
     </item>
     <item>
-      <title>CrimsonSquare</title>
-      <link>http://localhost:1313/journal/devlog/crimsonsquare/</link>
+      <title>Crimson Square</title>
+      <link>http://localhost:37025/journal/devlog/crimsonsquare/</link>
       <pubDate>Fri, 28 Feb 2025 01:39:26 +0530</pubDate>
-      <guid>http://localhost:1313/journal/devlog/crimsonsquare/</guid>
+      <guid>http://localhost:37025/journal/devlog/crimsonsquare/</guid>
       <description></description>
     </item>
     <item>
       <title>Building Static Sites With Hugo</title>
-      <link>http://localhost:1313/journal/general/buildingstaticsiteswithhugo/</link>
+      <link>http://localhost:37025/journal/general/buildingstaticsiteswithhugo/</link>
       <pubDate>Sat, 22 Feb 2025 01:50:15 +0530</pubDate>
-      <guid>http://localhost:1313/journal/general/buildingstaticsiteswithhugo/</guid>
-      <description>&lt;p&gt;Start by installing HUGO (ofc)&lt;br&gt;&#xA; &lt;br&gt;&#xA;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gohugo.io/&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;&lt;a href=&#34;https://gohugo.io/installation/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gohugo.io/installation/&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;After installation you can verify if its working by typing&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hope that shows something like this instead of error&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo v0.143.1-0270364a347b2ece97e0321782b21904db515ecc+extendedwindows/amd64 BuildDate=2025-02-04T08:57:38Z VendorInfo=gohugoio  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and I presume you have a git installed already just like a normal person but just in case&#xA;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://git-scm.com/downloads&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;so after that&#xA;go to the directory where you wish to create the website this command will make a root folder for itself so you just have to go somewhere like documents and create a template by writing&lt;/p&gt;</description>
+      <guid>http://localhost:37025/journal/general/buildingstaticsiteswithhugo/</guid>
+      <description>&lt;p&gt;Start by installing HUGO (ofc)&lt;br&gt;&#xA; &lt;br&gt;&#xA;&lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gohugo.io/&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;&lt;a href=&#34;https://gohugo.io/installation/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://gohugo.io/installation/&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;After installation you can verify if its working by typing&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Hope that shows something like this instead of error&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo v0.143.1-0270364a347b2ece97e0321782b21904db515ecc+extendedwindows/amd64 BuildDate=2025-02-04T08:57:38Z VendorInfo=gohugoio  &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and I presume you have a git installed already just like a normal insane person who doesn&amp;rsquo;t wanna use blogger or medium but just in case&#xA;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://git-scm.com/downloads&lt;/a&gt;&#xD;&#xA;&lt;br&gt;&#xA; &lt;br&gt;&#xA;so after that&#xA;go to the directory where you wish to create the website this command will make a root folder for itself so you just have to go somewhere like documents and create a template by writing&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why I Built This</title>
-      <link>http://localhost:1313/journal/devlog/whyibuiltthis/</link>
+      <link>http://localhost:37025/journal/devlog/whyibuiltthis/</link>
       <pubDate>Sat, 22 Feb 2025 01:50:15 +0530</pubDate>
-      <guid>http://localhost:1313/journal/devlog/whyibuiltthis/</guid>
-      <description></description>
+      <guid>http://localhost:37025/journal/devlog/whyibuiltthis/</guid>
+      <description>&lt;p&gt;I am Working on a Game called &lt;em&gt;&lt;strong&gt;Crimson Square&lt;/strong&gt;&lt;/em&gt; and for a long time I wanted to make a structured wall of how the game was coming up and what progress I was making for my own refrence.&lt;br&gt;&#xA;I would normally use &lt;a href=&#34;https://obsidian.md/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Obsidian&lt;/a&gt;&#xD;&#xA; or Word for something like this(ofc) but then I thought what point would it serve if not published? I could go with &lt;a href=&#34;https://medium.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Medium&lt;/a&gt;&#xD;&#xA; or google&amp;rsquo;s &lt;a href=&#34;https://www.blogger.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Blogger&lt;/a&gt;&#xD;&#xA; which would let me write and publish blogs for free but (heh) none of them provide complete customization of the way I wanted to render my blogs/devlogs, so I searched for something which does exactly what I want&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
