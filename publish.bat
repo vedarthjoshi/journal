@@ -2,7 +2,6 @@
 setlocal enabledelayedexpansion
 
 :: Navigate to the script directory (Git repo folder)
-cd /d "%~dp0"
 
 :: Pull latest changes
 echo Pulling latest changes...
@@ -29,7 +28,8 @@ if "%msg%"=="" (
     echo !count! > commit_count.txt
 
     :: Use default commit message
-    set msg="Auto commit #!count!"
+    set msg=Auto commit #!count!
+
 )
 
 :: Commit changes
