@@ -257,7 +257,7 @@ code{
     }
 
     .singleTitle{
-        margin-top: 12rem;
+        /* margin-top: 12rem; */
         /* border-bottom: 2px solid white; */
         /* background: red; */
         font-size: 3rem;
@@ -275,15 +275,16 @@ code{
     }
 
     .back{
-        position: fixed;
+        /* position: fixed;
         background: rgba(35, 35, 35, 0.635);
         border-radius: 10px;
-        padding: 2vh;
+        padding: 1vh;
         text-decoration: none;
         margin: 0;
-        margin-top: 5vh;
+        margin-top: 1vh;
         left: 5vw;
-        font-size: 11vh;
+        font-size: 5vh; */
+        visibility: hidden;
     }
     .back:hover{
         text-shadow: 0px 0px 10px #ff0088, 0px 0px 20px #ff00b3, 0px 0px 30px #ff0000;
@@ -301,9 +302,9 @@ code{
         /* margin: 0 auto; */
         max-width: 80%;
     }
-    .listDiv h1{
+    /* .listDiv h1{
         margin-top: 12rem;
-    }
+    } */
     .listArticle{
         font-size: 3vw;
     }

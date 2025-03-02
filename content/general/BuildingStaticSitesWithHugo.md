@@ -293,4 +293,57 @@ When GitHub has finished building and deploying your site, the color of the stat
 
 Under the deploy step, you will see a link to your live site.  
 &nbsp;  
-Now with this everytime you add a new blog or post you can just push it on your repo and GitHub will rebuild your site and deploy the changes.
+Now with this everytime you add a new blog or post you can just push it on your repo and GitHub will rebuild your site and deploy the changes.  
+&nbsp;  
+if you want to automate this process as well you can make a batch script if you are on windws or you could use a shell/bash script if you are on linux or macos  
+&nbsp;  
+in windws create a file in your project called publish.bat
+and put the following code in it
+
+```bat
+@echo off
+setlocal enabledelayedexpansion
+
+:: Navigate to the script directory (Git repo folder)
+
+:: Pull latest changes
+echo Pulling latest changes...
+git pull
+
+:: Add all changes
+git add .
+
+:: Ask for commit message
+set /p msg="Enter commit message (or press Enter for default): "
+
+:: Use default message if none provided
+if "%msg%"=="" (
+    :: Check if count file exists, else create one
+    if not exist commit_count.txt (
+        echo 1 > commit_count.txt
+    )
+
+    :: Read commit count
+    set /p count=<commit_count.txt
+
+    :: Increment commit count
+    set /a count+=1
+    echo !count! > commit_count.txt
+
+    :: Use default commit message
+    set msg=Auto commit #!count!
+
+)
+
+:: Commit changes
+git commit -m "!msg!"
+
+:: Push changes
+echo Pushing to GitHub...
+git push
+
+echo Done!
+pause
+```
+
+now everytime you created a new blog or post you can just run this script and it will push the changes to your repo and GitHub will rebuild your site and deploy the changes.

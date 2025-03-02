@@ -236,14 +236,66 @@ Copy and paste the YAML below into the file you created. Change the branch name 
 When GitHub has finished building and deploying your site, the color of the status indicator will change to green.</p>
 <p>Under the deploy step, you will see a link to your live site.<br>
  <br>
-Now with this everytime you add a new blog or post you can just push it on your repo and GitHub will rebuild your site and deploy the changes.</p>
+Now with this everytime you add a new blog or post you can just push it on your repo and GitHub will rebuild your site and deploy the changes.<br>
+ <br>
+if you want to automate this process as well you can make a batch script if you are on windws or you could use a shell/bash script if you are on linux or macos<br>
+ <br>
+in windws create a file in your project called publish.bat
+and put the following code in it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">setlocal</span> enabledelayedexpansion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Navigate to the script directory (Git repo folder)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Pull latest changes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Pulling latest changes...
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Add all changes</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Ask for commit message</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/p</span> msg=<span style="color:#e6db74">&#34;Enter commit message (or press Enter for default): &#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Use default message if none provided</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;</span>%msg%<span style="color:#e6db74">&#34;</span><span style="color:#f92672">==</span><span style="color:#e6db74">&#34;&#34;</span> (
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Check if count file exists, else create one</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">exist</span> commit_count.txt (
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> 1 &gt; commit_count.txt
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Read commit count</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/p</span> count=&lt;commit_count.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Increment commit count</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/a</span> count<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> !count! &gt; commit_count.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Use default commit message</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> msg=Auto commit #!count!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Commit changes</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>!msg!<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Push changes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Pushing to GitHub...
+</span></span><span style="display:flex;"><span>git push
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Done!
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
+</span></span></code></pre></div><p>now everytime you created a new blog or post you can just run this script and it will push the changes to your repo and GitHub will rebuild your site and deploy the changes.</p>
 
     </article>
     </div>
     <footer>
-    <div class="footer-content">
-        <p>&copy; 2025 Vedarth&#39;s Journal</p>
-    </div>
+    <center>
+        <div class="footer-content">
+            <p>&copy; 2025 Vedarth&#39;s Journal </p>
+        </div>
+
+    </center>
 </footer>
 
         </main>
