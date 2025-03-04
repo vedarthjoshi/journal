@@ -77,7 +77,15 @@ And here clone the repository you just copied
 git clone https://github.com/niklasbuschmann/contrast-hugo.git
 ```
 
-Now you can add git submodules for that repo
+Now you can add git submodules for that repo by
+
+```cmd
+cd themes
+```
+
+```cmd
+cd contrast-hugo
+```
 
 ```cmd
 git submodule add https://github.com/niklasbuschmann/contrast-hugo.git themes/contrast-hugo
@@ -88,6 +96,10 @@ git submodule update --init --recursive
 ```
 
 Now go back to main project dir by
+
+```cmd
+cd ..
+```
 
 ```cmd
 cd ..
@@ -136,7 +148,12 @@ now finally in that my-first-post.md file you can write whatever you want you ca
 &nbsp;  
 <https://www.markdownguide.org/>  
 &nbsp;  
-for now if you just want to check you can write **under** whatever content it contains
+first change the draft to false
+
+```md
+draft = false
+```
+for now if you just want to check you can write this **under** whatever content it contains
 
 ```md
 # THIS IS THE STUFF I WROTE  
@@ -146,7 +163,7 @@ Pubclic Static void main(String[] args) {
 }
 ```
 
-And save it boom ur done you can run your site whenever you want by
+And save it boom ur done you can run your site locally whenever you want by
 
 ```cmd
 hugo server
@@ -195,7 +212,8 @@ Change the Source to GitHub Actions. The change is immediate; you do not have to
 Create a file named hugo.yaml in a directory named .github/workflows.  
 &nbsp;  
 Now if you have simply followed along
-Copy and paste the YAML below into the file you created. Change the branch name and Hugo version as needed.
+Copy and paste the YAML below into the file you created.  
+if not change the branch name and Hugo version as needed.
 
 ```yaml
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
@@ -232,7 +250,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.141.0
+      HUGO_VERSION: 0.143.1
     steps:
       - name: Install Hugo CLI
         run: |

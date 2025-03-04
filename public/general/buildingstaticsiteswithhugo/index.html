@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><script src="/journal/livereload.js?mindelay=10&amp;v=2&amp;port=37025&amp;path=journal/livereload" data-no-instant defer></script>
+<head><script src="/journal/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=journal/livereload" data-no-instant defer></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     
     <title>Building Static Sites With Hugo</title>
@@ -73,11 +73,14 @@ now go back to vs code and open its terminal ( Ctrl + Shift + ` )</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> themes
 </span></span></code></pre></div><p>And here clone the repository you just copied</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git clone https://github.com/niklasbuschmann/contrast-hugo.git
-</span></span></code></pre></div><p>Now you can add git submodules for that repo</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git submodule add https://github.com/niklasbuschmann/contrast-hugo.git themes/contrast-hugo
+</span></span></code></pre></div><p>Now you can add git submodules for that repo by</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> themes
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> contrast-hugo
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git submodule add https://github.com/niklasbuschmann/contrast-hugo.git themes/contrast-hugo
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git submodule update --init --recursive
 </span></span></code></pre></div><p>Now go back to main project dir by</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> ..
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> ..
 </span></span></code></pre></div><p>and edit your hugo.toml file
 it should have something like</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span>
@@ -105,13 +108,15 @@ now finally in that my-first-post.md file you can write whatever you want you ca
 <a href="https://www.markdownguide.org/" target="_blank" rel="noopener noreferrer">https://www.markdownguide.org/</a>
 <br>
  <br>
-for now if you just want to check you can write <strong>under</strong> whatever content it contains</p>
+first change the draft to false</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>draft = false
+</span></span></code></pre></div><p>for now if you just want to check you can write this <strong>under</strong> whatever content it contains</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span># THIS IS THE STUFF I WROTE  
 </span></span><span style="display:flex;"><span>```java
 </span></span><span style="display:flex;"><span>Pubclic Static void main(String[] args) {
 </span></span><span style="display:flex;"><span>    System.out.println(&#34;Hello World!&#34;);
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>And save it boom ur done you can run your site whenever you want by</p>
+</span></span></code></pre></div><p>And save it boom ur done you can run your site locally whenever you want by</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo server
 </span></span></code></pre></div><p>Now once you are done doing all this if you wish to publish it online you can create a git repository on github suppose this one would be called journal.
 You can just follow their own steps here:<br>
@@ -147,7 +152,8 @@ Change the Source to GitHub Actions. The change is immediate; you do not have to
 <p>Create a file named hugo.yaml in a directory named .github/workflows.<br>
  <br>
 Now if you have simply followed along
-Copy and paste the YAML below into the file you created. Change the branch name and Hugo version as needed.</p>
+Copy and paste the YAML below into the file you created.<br>
+if not change the branch name and Hugo version as needed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo site to Pages</span>
 </span></span><span style="display:flex;"><span>
@@ -182,7 +188,7 @@ Copy and paste the YAML below into the file you created. Change the branch name 
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">env</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.141.0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.143.1</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
 </span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Hugo CLI</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
