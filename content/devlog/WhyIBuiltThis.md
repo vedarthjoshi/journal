@@ -40,7 +40,7 @@ I Sat Down To Read It's Documentation Again <3
 So ultimately had to go through how gh-pages worked and visit HUGO’s publishing on GitHub documentation and everything just worked on first try.
 and I also decided during that time what my [first post](https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/) will be about I had to document the process so that in future if I wanted to make another I could go to my own lively place where its VERY NICELY EXPLAINED.  I understood it very well that I created my own layout(Template) and theme to create [Vedarth's journal](https://vedarthjoshi.github.io/journal/)
 and thats what you are seeing.  
-go language has different but understandable syntax and hugo has still kept their old documentation for its [Variables](https://gohugobrasil.netlify.app/variables/page/) opned which helped me alot.
+go language has different but understandable syntax and hugo has still kept their old documentation for its [Variables](https://gohugobrasil.netlify.app/variables/page/) opend which helped me alot.
 I also created a simple publishing [batch script](https://github.com/vedarthjoshi/journal/blob/main/publish.bat) that would automate the process of pushing the new changes or contents to gihub.  
 &nbsp;  
 yep so to wrap it up if you wish to create something like this using hugo you can check out my blog under general section [Building Static Sites With Hugo](https://vedarthjoshi.github.io/journal/general/buildingstaticsiteswithhugo/) all the resources I used to build mine is in there thank you.

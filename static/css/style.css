@@ -113,9 +113,14 @@ body {
 
 .inArticle a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
     color: #cf5faa;
-    
+    /* background: #00000055; */
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.inArticle a:hover{
+    text-decoration: underline;
+    color: #7083ff;
     /* background: #00000055; */
 }
 
@@ -201,10 +206,12 @@ code{
 .listArticle a{
     text-decoration: none;
     color: #c861a6;
+    transition: text-shadow 0.2s ease-in-out;
 }
 
 .listArticle a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-shadow: 0px 0px 10px #ff0088, 0px 0px 20px #ff00b3, 0px 0px 30px #ff0000;
 }
 
 .listArticle{
