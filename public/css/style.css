@@ -61,6 +61,10 @@ body {
     transform: translateY(-5px);
 }
 
+.vedarth:hover{
+    text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #0048ff, 0px 0px 30px #8000ff;
+}
+
 .section1:hover {
     text-shadow: 0px 0px 10px #ff0088, 0px 0px 20px #ff00b3, 0px 0px 30px #ff0000;
 }
