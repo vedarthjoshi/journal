@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/journal/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=journal/livereload" data-no-instant defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    
+    <title>Building Static Sites With Hugo</title>
+    <link rel="stylesheet" href="/journal/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="upper">
+        
+        <header>
+    
+    
+    
+</header>
+        <main>
+            
+<a href="javascript:history.back()">
+    <h1 class="back">&lt;</h1>
+</a>
+    <div class="content">
+    <h1 class="singleTitle">Building Static Sites With Hugo</h1>
+        
+    <article class="inArticle">
+        <p>Start by installing HUGO (ofc)<br>
+ <br>
+<a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">https://gohugo.io/</a>
+<br>
+ <br>
+<a href="https://gohugo.io/installation/" target="_blank" rel="noopener noreferrer">https://gohugo.io/installation/</a>
+<br>
+ <br>
+After installation you can verify if its working by typing</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><p>Hope that shows something like this instead of error</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo v0.143.1-0270364a347b2ece97e0321782b21904db515ecc+extendedwindows/amd64 BuildDate=2025-02-04T08:57:38Z VendorInfo=gohugoio  
+</span></span></code></pre></div><p>and I presume you have a git installed already just like a normal insane person who doesn&rsquo;t wanna use blogger or medium but just in case
+<a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">https://git-scm.com/downloads</a>
+<br>
+ <br>
+so after that
+go to the directory where you wish to create the website this command will make a root folder for itself so you just have to go somewhere like documents and create a template by writing</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new site epic-site-name 
+</span></span></code></pre></div><p>Now get into site directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> epic-site-name
+</span></span></code></pre></div><p>And initialize git there</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>You can now also switch to vs code or IDE that you use
+For vs code you can just type</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>code .
+</span></span></code></pre></div><p>Now you have base setup so let&rsquo;s see how to get something eye pleasing
+Now we can create our own theme from scratch or with a basic template but for now you can go to<br>
+ <br>
+<a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreferrer">https://themes.gohugo.io/</a>
+<br>
+ <br>
+now just like a professional blogger I am going to use a theme that is not in that whole list or maybe under a different name its called<br>
+ <br>
+<a href="https://github.com/niklasbuschmann/contrast-hugo" target="_blank" rel="noopener noreferrer">https://github.com/niklasbuschmann/contrast-hugo</a>
+<br>
+ <br>
+Remember every theme varies apart from basic ones so the theme you choose may have more steps unless its basic theme which is our case
+So copy its link something like<br>
+ <br>
+<a href="https://github.com/niklasbuschmann/contrast-hugo.git" target="_blank" rel="noopener noreferrer">https://github.com/niklasbuschmann/contrast-hugo.git</a>
+<br>
+ <br>
+now go back to vs code and open its terminal ( Ctrl + Shift + ` )</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> themes
+</span></span></code></pre></div><p>And here clone the repository you just copied</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git clone https://github.com/niklasbuschmann/contrast-hugo.git
+</span></span></code></pre></div><p>Now you can add git submodules for that repo by</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> themes
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> contrast-hugo
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git submodule add https://github.com/niklasbuschmann/contrast-hugo.git themes/contrast-hugo
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git submodule update --init --recursive
+</span></span></code></pre></div><p>Now go back to main project dir by</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> ..
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#66d9ef">cd</span> ..
+</span></span></code></pre></div><p>and edit your hugo.toml file
+it should have something like</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#39;https://example.org/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#39;en-us&#39;</span>  
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;epic-site-name&#39;</span>
+</span></span></code></pre></div><p>Add one more line at the bottom</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#39;contrast-hugo&#39;</span>
+</span></span></code></pre></div><p>And you are done with all the preparations
+See your site without absolutely nothing but name of your site by typing</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>As default it should open on link<br>
+ <br>
+<a href="http://localhost:1313/" target="_blank" rel="noopener noreferrer">http://localhost:1313/</a>
+<br>
+ </p>
+<p>you can see how your site would look like without any contents</p>
+<p>now to add some blogs you can go back to that same terminal of your project and press
+Ctrl + C or just open another terminal at that path
+Now to add a new post/blog page just type</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo new posts/my-first-epic-post.md
+</span></span></code></pre></div><p>you can see that file under content/posts/my-first-epic-post.md<br>
+ <br>
+now finally in that my-first-post.md file you can write whatever you want you can customize what you want (lol) by learning how to use markdown language<br>
+ <br>
+<a href="https://www.markdownguide.org/" target="_blank" rel="noopener noreferrer">https://www.markdownguide.org/</a>
+<br>
+ <br>
+first change the draft to false</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>draft = false
+</span></span></code></pre></div><p>for now if you just want to check you can write this <strong>under</strong> whatever content it contains</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span># THIS IS THE STUFF I WROTE  
+</span></span><span style="display:flex;"><span>```java
+</span></span><span style="display:flex;"><span>Pubclic Static void main(String[] args) {
+</span></span><span style="display:flex;"><span>    System.out.println(&#34;Hello World!&#34;);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>And save it boom ur done you can run your site locally whenever you want by</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>Now once you are done doing all this if you wish to publish it online you can create a git repository on github suppose this one would be called journal.
+You can just follow their own steps here:<br>
+ <br>
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener noreferrer">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a>
+<br>
+ </p>
+<p>All steps are easy enough but just to make this guide complete.
+So after you test your site locally by</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>You have to create a repository and push your local repository on github
+If you followed along by typing ls you will get below results apart from git modules</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>d-----         2/12/2025   9:41 PM                .github
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                archetypes
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                assets
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:30 PM                content
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                data
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                i18n
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                layouts
+</span></span><span style="display:flex;"><span>d-----         2/14/2025   3:08 AM                public
+</span></span><span style="display:flex;"><span>d-----         2/12/2025   9:25 PM                static
+</span></span><span style="display:flex;"><span>d-----         2/12/2025  10:05 PM                themes
+</span></span><span style="display:flex;"><span>-a----         2/12/2025   9:57 PM            124 .gitmodules
+</span></span><span style="display:flex;"><span>-a----         2/12/2025   9:28 PM              0 .hugo_build.lock
+</span></span><span style="display:flex;"><span>-a----         2/12/2025  10:04 PM            240 hugo.toml
+</span></span><span style="display:flex;"><span>-a----         2/12/2025   9:40 PM             24 README.md
+</span></span></code></pre></div><p>now push it on github and go to your repository in your browser
+From the main menu choose Settings &gt; Pages. In the center of your screen you will see this:<br>
+ <br>
+<img src="../../blogImages/BuildingStaticSitesWithHugo/githubPagesScreenshot.png" alt="githubPagesScreenshot">
+ <br>
+Change the Source to GitHub Actions. The change is immediate; you do not have to press a Save button.</p>
+<p>Create a file named hugo.yaml in a directory named .github/workflows.<br>
+ <br>
+Now if you have simply followed along
+Copy and paste the YAML below into the file you created.<br>
+if not change the branch name and Hugo version as needed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo site to Pages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Runs on pushes targeting the default branch</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">push</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">branches</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">workflow_dispatch</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">permissions</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">contents</span>: <span style="color:#ae81ff">read</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pages</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id-token</span>: <span style="color:#ae81ff">write</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">concurrency</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">group</span>: <span style="color:#e6db74">&#34;pages&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cancel-in-progress</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default to bash</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">defaults</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">run</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">shell</span>: <span style="color:#ae81ff">bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">jobs</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Build job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">HUGO_VERSION</span>: <span style="color:#ae81ff">0.143.1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Hugo CLI</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          &amp;&amp; sudo dpkg -i ${{ runner.temp }}/hugo.deb</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Dart Sass</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">sudo snap install dart-sass</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Checkout</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v4</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">submodules</span>: <span style="color:#ae81ff">recursive</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">fetch-depth</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Setup Pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/configure-pages@v5</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Install Node.js dependencies</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#e6db74">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Build with Hugo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">env</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">HUGO_CACHEDIR</span>: <span style="color:#ae81ff">${{ runner.temp }}/hugo_cache</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">HUGO_ENVIRONMENT</span>: <span style="color:#ae81ff">production</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">TZ</span>: <span style="color:#ae81ff">America/Los_Angeles</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          hugo \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --gc \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --minify \
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            --baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Upload artifact</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/upload-pages-artifact@v3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">with</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">path</span>: <span style="color:#ae81ff">./public</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Deployment job</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deploy</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span>: <span style="color:#ae81ff">github-pages</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">${{ steps.deployment.outputs.page_url }}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">needs</span>: <span style="color:#ae81ff">build</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">steps</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">id</span>: <span style="color:#ae81ff">deployment</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/deploy-pages@v4</span>
+</span></span></code></pre></div><p>Now all you have to do is push it again on Github</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git add -A
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Create hugo.yaml&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p>From GitHub&rsquo;s main menu, choose Actions. You will see something like this:<br>
+ <br>
+<img src="../../blogImages/BuildingStaticSitesWithHugo/githubactionsworkflowScreenshot.png" alt="githubActionsWorkflowScreenshot"><br>
+When GitHub has finished building and deploying your site, the color of the status indicator will change to green.</p>
+<p>Under the deploy step, you will see a link to your live site.<br>
+ <br>
+Now with this everytime you add a new blog or post you can just push it on your repo and GitHub will rebuild your site and deploy the changes.<br>
+ <br>
+if you want to automate this process as well you can make a batch script if you are on windws or you could use a shell/bash script if you are on linux or macos<br>
+ <br>
+in windws create a file in your project called publish.bat
+and put the following code in it</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bat" data-lang="bat"><span style="display:flex;"><span>@<span style="color:#66d9ef">echo</span> off
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">setlocal</span> enabledelayedexpansion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Navigate to the script directory (Git repo folder)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Pull latest changes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Pulling latest changes...
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Add all changes</span>
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Ask for commit message</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/p</span> msg=<span style="color:#e6db74">&#34;Enter commit message (or press Enter for default): &#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Use default message if none provided</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;</span>%msg%<span style="color:#e6db74">&#34;</span><span style="color:#f92672">==</span><span style="color:#e6db74">&#34;&#34;</span> (
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Check if count file exists, else create one</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#66d9ef">exist</span> commit_count.txt (
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> 1 &gt; commit_count.txt
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Read commit count</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/p</span> count=&lt;commit_count.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Increment commit count</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> <span style="color:#66d9ef">/a</span> count<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> !count! &gt; commit_count.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    :<span style="color:#75715e">: Use default commit message</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">set</span> msg=Auto commit #!count!
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Commit changes</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>!msg!<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:<span style="color:#75715e">: Push changes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Pushing to GitHub...
+</span></span><span style="display:flex;"><span>git push
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> Done!
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">pause</span>
+</span></span></code></pre></div><p>now everytime you created a new blog or post you can just run this script and it will push the changes to your repo and GitHub will rebuild your site and deploy the changes.</p>
+
+    </article>
+    </div>
+    <footer>
+    <center>
+        <div class="footer-content">
+            <a href="/journal"><p>&copy; 2025 Vedarth&#39;s Journal </p></a>
+        </div>
+
+    </center>
+</footer>
+
+        </main>
+    </div>
+    
+    
+</body>
+</html>
