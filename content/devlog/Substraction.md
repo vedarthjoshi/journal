@@ -73,7 +73,9 @@ Thus, knowing my pixel art skills, erasing things has always been easier for me.
 I think the best example to understand this is  (if you zoom in) are the second images they are walls and stairs in my game if you observe the texture on them its just made by using refining two colors and their shaps, so the whole process gets easier for me and also works. the bush in above example next to letter box is also drawn using this way.
 so in simple words Curves + Gaps = Substraction below is a complte image with mostly using eraser  
 &nbsp;  
+
 ![crimsonMansionBackground2](../../blogImages/Substraction/crimsonMansionBackground2.png)  
+
 wanted to use this as my game room's background but looked very unwelcoming place in red color so removed that maybe because of the eyes? lol.  
 &nbsp;  
 
