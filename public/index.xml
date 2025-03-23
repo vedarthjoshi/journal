@@ -6,8 +6,15 @@
     <description>Recent content on Vedarth&#39;s Journal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2025 01:43:35 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 12:09:14 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Substraction</title>
+      <link>http://localhost:1313/journal/devlog/substraction/</link>
+      <pubDate>Sun, 23 Mar 2025 12:09:14 +0530</pubDate>
+      <guid>http://localhost:1313/journal/devlog/substraction/</guid>
+      <description>&lt;p&gt;I was wondering what should I put in devlogs since I have already coded most of the core mechenics, and well forcing myself to write isn&amp;rsquo;t how I wanna do this, so I put hold to this whole website making phase and continued my devlopment.&lt;br&gt;&#xA; &lt;br&gt;&#xA;I was to design and work on implementing Journal in a room and also a letterbox outside what I call Crimson Mansion and there I created these walls for room and trees so the letter box doesn&amp;rsquo;t feel so lonely.&lt;br&gt;&#xA; &lt;/p&gt;</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/journal/about/</link>

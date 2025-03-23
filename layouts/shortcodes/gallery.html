@@ -1,0 +1,11 @@
+{{ $key := .Get "key" | default "gallery" }}
+{{ $images := index .Page.Params $key }}
+{{ if $images }}
+  <div class="image-gallery">
+    {{ range $images }}
+      <img src="{{ .src }}" alt="{{ .alt }}" class="gallery-image" />
+    {{ end }}
+  </div>
+{{ else }}
+  <p>No images found for gallery '{{ $key }}'</p>
+{{ end }}
