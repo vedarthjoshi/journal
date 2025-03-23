@@ -59,7 +59,7 @@ I am talking about captureing my thoughts, if you can see top left in first imag
 &nbsp;  
 so now that you know why I draw none of these drawings present substraction art (hah) but this is the place I got inspired from if you observe the way curves are drawn they are ment for mehendi design.  
 &nbsp;  
-All the art you see in these are **utilization of space and ink (IK carbon in this case NERD)** if you learned about **Caligraphy** in School u should know even simple ovel curves seprated by space would still look cool beacuse it utilizes ink and space equally with bit of humaness and creativity of how and where they are put there are whole styles of line art and such, a good example would be how  
+All the art you see in these are **utilization of space and ink (IK carbon in this case NERD)** if you learned about **Caligraphy** in School u should know even simple ovel curves seprated by space would still look cool beacuse it utilizes ink and space equally with bit of humaness and creativity of how and where they are put. there are whole styles of line art and such, a good example would be how  
 
 [GREAT ART INSTAGRAM LINK](https://www.instagram.com/ioanapioaru?igsh=bXkwbGhkM2ZzcHBw)  
 [OR JUST SEE THE REEL I AM TALKING ABOUT](https://www.instagram.com/reel/DHOQYu5tgWF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)  
@@ -68,7 +68,14 @@ uses lines for background.
 same thing goes for any Mehendi design fill the hands with gaps and mehendi.  
 &nbsp;  
 Thus, knowing my pixel art skills, erasing things has always been easier for me. and well I thought maybe I could use that a bit here and there it was initially for a tilemap I was creating (Which I don't have any image of rn cause I lost it in some E Drive cause UBUNTU DOESN't HAVE A FKN FILE SYSTEM THATS 100% COMPATIBLE WITH WINDOWS) and there I first noticed how greatly we can use that
-{{< gallery key="gallery3" >}}   
-{{< gallery >}}
+{{< gallery key="gallery3" >}}  
+{{< gallery >}}  
+I think the best example to understand this is  (if you zoom in) are the second images they are walls and stairs in my game if you observe the texture on them its just made by using refining two colors and their shaps, so the whole process gets easier for me and also works. the bush in above example next to letter box is also drawn using this way.
+so in simple words Curves + Gaps = Substraction below is a complte image with mostly using eraser  
 &nbsp;  
-I think the best example to understand this is  (if you zoom in) are the second images they are walls and stairs in my game if you observe the texture on them its just made by using refining two colors and their shaps, 
+![crimsonMansionBackground2](../../blogImages/Substraction/crimsonMansionBackground2.png)  
+wanted to use this as my game room's background but looked very unwelcoming place in red color so removed that maybe because of the eyes? lol.  
+&nbsp;  
+
+![image](../../blogImages/Substraction/image.png)  
+well that wraps it up laterzzz.
