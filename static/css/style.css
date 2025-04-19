@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background: #1f1f1f;
+    background: #0c1923;
     color: white;
     /* font-family: '0xProto Nerd Font'; */
     font-family: 'Poiret One';
@@ -106,6 +107,7 @@ body {
     font-weight: 100;
     font-family: 'Nunito';
     font-size: 1.5rem;
+    color: #deb889;
     /* border: 1px solid rgb(124, 124, 124); */
     border-radius: 10px;
     padding: 1rem;
